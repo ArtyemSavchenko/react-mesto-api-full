@@ -1,0 +1,4 @@
+.page__centered-box {
+  display: grid;
+  place-content: center;
+}

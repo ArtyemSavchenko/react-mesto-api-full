@@ -1,0 +1,6 @@
+.card__like-box {
+  margin-right: 20px;
+  display: grid;
+  justify-items: center;
+  row-gap: 3px;
+}

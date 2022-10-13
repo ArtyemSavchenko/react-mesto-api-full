@@ -1,0 +1,12 @@
+.card {
+  position: relative;
+  max-width: 282px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  display: grid;
+  font-size: 24px;
+  grid-template-columns: 1fr min-content;
+  grid-template-rows: auto 80px;
+  align-items: center;
+}

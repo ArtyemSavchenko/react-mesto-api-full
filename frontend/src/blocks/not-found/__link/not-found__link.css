@@ -1,0 +1,14 @@
+.not-found__link {
+  color: #000;
+  font-family: 'Inter', 'Verdana', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  padding: .7em 2em;
+  background-color: #fff;
+  border-radius: .3em;
+}
+.not-found__link:hover {
+  background-color: rgba(255, 255, 255, .6);
+}

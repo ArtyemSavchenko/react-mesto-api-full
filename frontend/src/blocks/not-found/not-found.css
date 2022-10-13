@@ -1,0 +1,7 @@
+.not-found {
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  row-gap: 10px;
+  padding: 30px 10px;
+}
