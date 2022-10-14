@@ -1,4 +1,4 @@
 export const apiSettings = {
-  serverUrl: "http://localhost:3000",
+  serverUrl: "https://api.mesto-domain.nomoredomains.icu/",
   appJson: "application/json",
 };
