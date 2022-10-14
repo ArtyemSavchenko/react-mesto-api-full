@@ -8,7 +8,7 @@ const handleErrors = require('./middlewares/handleErrors');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 const checkCors = require('./middlewares/checkCors');
 
-const { PORT = 3000 } = process.env;
+const { PORT = 3000, NODE_ENV } = process.env;
 
 const app = express();
 
@@ -31,5 +31,5 @@ app.use(handleErrors);
 
 app.listen(PORT, () => {
   // eslint-disable-next-line no-console
-  console.log(`Приложение запущено на порте ${PORT}`);
+  console.log(`Приложение запущено на порте ${PORT}.\nРежим работы приложения '${NODE_ENV}'.`);
 });
