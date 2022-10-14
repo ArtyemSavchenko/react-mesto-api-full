@@ -48,7 +48,7 @@ export default function App() {
       auth
         .checkToken(token)
         .then(res => {
-          setUserEmail(res.data.email);
+          setUserEmail(res.email);
           setLoggedIn(true);
           history.push('/');
         })
@@ -99,7 +99,7 @@ export default function App() {
   };
 
   const handleCardLike = card => {
-    const isLiked = card.likes.some(like => like._id === currentUser._id);
+    const isLiked = card.likes.some(like => like === currentUser._id);
     const likePromise = !isLiked
       ? api.putLike(card._id)
       : api.deleteLike(card._id);

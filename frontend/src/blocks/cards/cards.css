@@ -4,6 +4,11 @@
   justify-content: center;
   gap: 20px;
   padding-top: 36px;
+  padding-left: 19px;
+  padding-right: 19px;
+  box-sizing: border-box;
+  align-self: start;
+  margin: 0 auto;
 }
 
 @media (min-width: 500px) {
@@ -17,5 +22,13 @@
     gap: 17px;
     padding-top: 50px;
     grid-template-columns: repeat(3, minmax(210px, 282px));
+  }
+}
+
+@media (min-width: 918px) {
+  .cards {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 880px;
   }
 }

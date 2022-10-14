@@ -9,7 +9,7 @@ export default function Main({
   onCardClick,
   onCardLike,
   onCardDelete,
-  cards
+  cards = []
 }) {
   const user = useContext(CurrentUserInfo);
 
@@ -43,7 +43,7 @@ export default function Main({
         ></button>
       </section>
 
-      <section className="cards page__section" aria-label="Места.">
+      <section className="cards" aria-label="Места.">
         {cards.map(data => (
           <Card
             key={data._id}

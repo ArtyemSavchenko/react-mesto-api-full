@@ -44,7 +44,7 @@ module.exports.createUser = (req, res, next) => {
       avatar,
     }))
     .then((user) => {
-      res.send({ data: user });
+      res.send(user);
     })
     .catch((err) => {
       if (err.code === 11000) {
@@ -77,7 +77,7 @@ module.exports.updateUser = (req, res, next) => {
     .orFail(() => {
       throw new NotFound('Пользователь не найден.');
     })
-    .then((user) => res.send({ data: user }))
+    .then((user) => res.send(user))
     .catch((err) => {
       if (err.name === 'ValidationError') {
         return next(new BadRequest('Некорректные данные пользователя.'));
@@ -96,7 +96,7 @@ module.exports.updateAvatar = (req, res, next) => {
     .orFail(() => {
       throw new NotFound('Пользователь не найден.');
     })
-    .then((user) => res.send({ data: user }))
+    .then((user) => res.send(user))
     .catch((err) => {
       if (err.name === 'ValidationError') {
         return next(new BadRequest('Некорректные данные.'));
