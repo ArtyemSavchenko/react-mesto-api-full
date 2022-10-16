@@ -4,4 +4,5 @@ module.exports.allowedCors = [
   'https://mesto-domain.nomoredomains.icu',
   'http://mesto-domain.nomoredomains.icu',
   'http://localhost:3001',
+  'http://localhost:3000',
 ];
